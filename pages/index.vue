@@ -1,27 +1,28 @@
 <template>
   <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        Toyonga-Yusei
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+    <div class="firstView">
+      <div class="firstView_contents1">
+        とよなが
+      </div>
+      <div class="firstView_contents2">
+        ＃ぼんやり、ゆらゆら
+      </div>
+      <div class="firstView_contents3">
+        #豊永の肩には象がいる
+      </div>
+      <div class="firstView_contents4">
+        follow me
+      </div>
+      <div class="firstView_contents5">
+        <nav tabindex="-1" class="menu">
+          <ul tabindex="-1" class="menu-ul">
+            <li><a href="#">リンク</a></li>
+            <li><a href="#">リンク</a></li>
+            <li><a href="#">リンク</a></li>
+            <li><a href="#">リンク</a></li>
+            <li><a href="#">リンク</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
   </div>
@@ -32,42 +33,103 @@ export default {}
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.firstView {
+  width: 100%;
+  height: 100vh;
+  padding: 40px 30px;
+  border: solid;
+  position: relative;
 }
 
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.firstView_contents1 {
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.firstView_contents2 {
+  position: absolute;
+  left: 30px;
+  bottom: 40px;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
 }
 
-.links {
-  padding-top: 15px;
+.firstView_contents3 {
+  position: absolute;
+  right: 30px;
+  bottom: 40px;
+}
+
+.firstView_contents4 {
+  transform: rotate(90deg);
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  outline: none;
+  z-index: 100;
+}
+
+.menu::before {
+  position: absolute;
+  top: 50px;
+  right: 40px;
+  cursor: pointer;
+  /*
+     アイコンは、はてなブログのデフォルトアイコン使用しています。
+ */
+  font-family: blogicon;
+  content: "\f003";
+  font-size: 30px;
+  line-height: 1;
+}
+
+.menu-ul {
+  position: absolute;
+  top: 0;
+  right: -80vw;
+  margin: 0;
+  list-style: none;
+  width: 80vw;
+  height: 100vh;
+  background: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  outline: none;
+  transition: right 0.4s 0.1s;
+}
+
+.menu-ul::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  z-index: -1;
+  background: rgb(0, 0, 0);
+  opacity: 0;
+  transition: opacity 0.4s 0.1s,
+  width 0s 0.5s,
+  height 0s 0.5s;
+}
+
+.menu:focus .menu-ul {
+  right: 0;
+  transition: right 0.5s;
+}
+
+.menu-ul:focus {
+  right: -80vw;
+}
+
+.menu:focus .menu-ul::after {
+  width: 180vw;
+  height: 100vh;
+  opacity: 0.4;
+  transition: opacity 0.5s;
 }
 </style>
