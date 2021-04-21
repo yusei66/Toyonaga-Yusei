@@ -25,6 +25,14 @@
         </nav>
       </div>
     </div>
+    <div class="about">
+      <div class="aboutImg">
+        <img src="../static/sample01.jpg" height="550px" width="880px"/>
+      </div>
+      <div class="aboutText">
+        a
+      </div>
+    </div>
   </div>
 </template>
 
@@ -131,5 +139,25 @@ export default {}
   height: 100vh;
   opacity: 0.4;
   transition: opacity 0.5s;
+}
+
+.aboutText {
+  margin-top: 100px;
+  height: 1000px;
+  width: 100%;
+  background-color: #35495e !important;
+  z-index: 1;
+  position: absolute;
+}
+
+.about {
+  height: 1100px;
+  width: 100%;
+  position: relative;
+}
+
+.aboutImg {
+  position: absolute;
+  z-index: 2;
 }
 </style>
