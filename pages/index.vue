@@ -26,12 +26,19 @@
       </div>
     </div>
     <div class="about">
-      <div class="aboutImg">
-        <img src="../static/sample01.jpg" height="550px" width="880px"/>
+      <img src="../static/sample01.jpg" class="aboutImg1" height="550px" width="880px"/>
+      <div class="aboutContents">
+        <h1>about</h1>
+        <p class="mainText">こんにちは。今日は、いい天気ですね。</p>
       </div>
-      <div class="aboutText">
-        a
+      <div class="aboutBackground">
+        画像
       </div>
+      <img src="../static/sample02.jpg" class="aboutImg2" height="400px" width="600px"/>
+      <img src="../static/sample03.jpg" class="aboutImg3" height="400px" width="600px"/>
+    </div>
+    <div class="works">
+
     </div>
   </div>
 </template>
@@ -45,11 +52,7 @@ export default {}
   width: 100%;
   height: 100vh;
   padding: 40px 30px;
-  border: solid;
   position: relative;
-}
-
-.firstView_contents1 {
 }
 
 .firstView_contents2 {
@@ -141,7 +144,7 @@ export default {}
   transition: opacity 0.5s;
 }
 
-.aboutText {
+.aboutBackground {
   margin-top: 100px;
   height: 1000px;
   width: 100%;
@@ -150,14 +153,47 @@ export default {}
   position: absolute;
 }
 
+.p {
+  font-size: 16px;
+  z-index: 3;
+
+}
+
 .about {
-  height: 1100px;
+  height: 1500px;
   width: 100%;
   position: relative;
 }
 
-.aboutImg {
+.aboutContents {
+  position: absolute;
+  z-index: 2;
+  height: 550px;
+  width: 100%;
+  top: 550px;
+}
+
+.works {
+  height: 1300px;
+  width: 100%;
+  position: relative;
+}
+
+.aboutImg1 {
   position: absolute;
   z-index: 2;
 }
+
+.aboutImg2{
+  position: absolute;
+  top: 1100px;
+  left: 200px;
+}
+
+.aboutImg3{
+  position: absolute;
+  top: 1165px;
+  right: 200px;
+}
+
 </style>
