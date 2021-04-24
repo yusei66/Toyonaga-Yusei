@@ -38,9 +38,46 @@
       <img src="../static/sample03.jpg" class="aboutImg3" height="400px" width="600px"/>
     </div>
     <div class="works">
-
+      <div class="worksContents">
+        <h1 class="worksTitle">Works</h1>
+        <div class="worksCard">
+          <div class="card card-skin">
+            <div class="card__imgframe"></div>
+            <div class="card__textbox">
+              <div class="card__titletext">
+                タイトルがはいります。タイトルがはいります。
+              </div>
+              <div class="card__overviewtext">
+                概要がはいります。概要がはいります。概要がはいります。概要がはいります。
+              </div>
+            </div>
+          </div>
+        <div class="card card-skin">
+          <div class="card__imgframe"></div>
+          <div class="card__textbox">
+            <div class="card__titletext">
+              タイトルがはいります。タイトルがはいります。
+            </div>
+            <div class="card__overviewtext">
+              概要がはいります。概要がはいります。概要がはいります。概要がはいります。
+            </div>
+          </div>
+        </div>
+          <div class="card card-skin">
+            <div class="card__imgframe"></div>
+            <div class="card__textbox">
+              <div class="card__titletext">
+                タイトルがはいります。タイトルがはいります。
+              </div>
+              <div class="card__overviewtext">
+                概要がはいります。概要がはいります。概要がはいります。概要がはいります。
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -169,14 +206,8 @@ export default {}
   position: absolute;
   z-index: 2;
   height: 550px;
-  width: 100%;
+  width: 700px;
   top: 550px;
-}
-
-.works {
-  height: 1300px;
-  width: 100%;
-  position: relative;
 }
 
 .aboutImg1 {
@@ -184,16 +215,83 @@ export default {}
   z-index: 2;
 }
 
-.aboutImg2{
+.aboutImg2 {
   position: absolute;
   top: 1100px;
   left: 200px;
 }
 
-.aboutImg3{
+.aboutImg3 {
   position: absolute;
   top: 1165px;
   right: 200px;
 }
 
+.worksTitle {
+  height: 60px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.worksContents {
+  height: 450px;
+  width: 700px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.works {
+  height: 800px;
+  width: 100%;
+  position: relative;
+  padding-top: 250px;
+}
+
+.worksCard{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.card{
+  width: 200px;
+  height: 320px;
+}
+
+.card__imgframe{
+  width: 100%;
+  height: 125px;
+  padding-top: 56.25%;
+  background: url(https://placehold.jp/640x360.png) no-repeat center;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.card__textbox{
+  width: 100%;
+  height: auto;
+  padding: 20px 18px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.card__textbox > * + *{
+  margin-top: 10px;
+}
+
+.card__titletext{
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 125%;
+}
+
+.card__overviewtext{
+  font-size: 12px;
+  line-height: 150%;
+}
 </style>
