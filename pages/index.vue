@@ -52,17 +52,17 @@
               </div>
             </div>
           </div>
-        <div class="card card-skin">
-          <div class="card__imgframe"></div>
-          <div class="card__textbox">
-            <div class="card__titletext">
-              タイトルがはいります。タイトルがはいります。
-            </div>
-            <div class="card__overviewtext">
-              概要がはいります。概要がはいります。概要がはいります。概要がはいります。
+          <div class="card card-skin">
+            <div class="card__imgframe"></div>
+            <div class="card__textbox">
+              <div class="card__titletext">
+                タイトルがはいります。タイトルがはいります。
+              </div>
+              <div class="card__overviewtext">
+                概要がはいります。概要がはいります。概要がはいります。概要がはいります。
+              </div>
             </div>
           </div>
-        </div>
           <div class="card card-skin">
             <div class="card__imgframe"></div>
             <div class="card__textbox">
@@ -76,8 +76,27 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="project">
+      <div class="projectTitle">
+        <div class="projectText1">
+          <h2>pro</h2>
+        </div>
+        <div class="projectTexts">
+          <img src="../static/sample01.jpg" height="235px" width="350px"/>
+          <div class="projectText2"><h2>ject</h2></div>
+        </div>
+      </div>
+      <div class="projectContents1">
+        <img src="../static/sample02.jpg" height="280px" width="420px"/>
+        <div class=" projectTextbox1">今日はすごく良い天気になりました。</div>
+      </div>
+      <div class="projectContents2">
+        <img src="../static/sample02.jpg" height="280px" width="420px"/>
+        <div class=" projectTextbox2">今日はすごく良い天気になりました。</div>
       </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -251,19 +270,19 @@ export default {}
   padding-top: 250px;
 }
 
-.worksCard{
+.worksCard {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
 }
 
-.card{
+.card {
   width: 200px;
   height: 320px;
 }
 
-.card__imgframe{
+.card__imgframe {
   width: 100%;
   height: 125px;
   padding-top: 56.25%;
@@ -272,7 +291,7 @@ export default {}
   box-sizing: border-box;
 }
 
-.card__textbox{
+.card__textbox {
   width: 100%;
   height: auto;
   padding: 20px 18px;
@@ -280,18 +299,95 @@ export default {}
   box-sizing: border-box;
 }
 
-.card__textbox > * + *{
+.card__textbox > * + * {
   margin-top: 10px;
 }
 
-.card__titletext{
+.card__titletext {
   font-size: 20px;
   font-weight: bold;
   line-height: 125%;
 }
 
-.card__overviewtext{
+.card__overviewtext {
   font-size: 12px;
   line-height: 150%;
+}
+
+.project {
+  height: 1400px;
+  width: 100%;
+  background-color: #35495e;
+  padding: 0 160px 0 160px;
+}
+
+.projectTitle {
+  height: 500px;
+  width: 100%;
+}
+
+.projectText1 {
+  height: 150px;
+  width: auto;
+}
+
+.projectTexts {
+  height: 235px;
+  width: auto;
+}
+
+.projectTexts img {
+  float: left;
+}
+
+.projectText2 {
+  float: right;
+}
+
+h2 {
+  font-size: 150px;
+  line-height: 50px;
+}
+
+.projectContents1 {
+  height: 320px;
+  width: 500px;
+  position: relative;
+  margin: 100px 0 0 auto;
+}
+
+.projectContents1 img {
+  position: absolute;
+  z-index: 1;
+}
+
+.projectTextbox1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  height: 170px;
+  width: 440px;
+}
+
+.projectContents2 {
+  height: 320px;
+  width: 500px;
+  position: relative;
+  margin: 65px;
+}
+
+.projectContents2 img {
+  position: absolute;
+  z-index: 1;
+}
+
+.projectTextbox2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  height: 170px;
+  width: 440px;
 }
 </style>
