@@ -26,17 +26,49 @@
       </div>
     </div>
     <div class="about">
-      <img src="../static/sample01.jpg" class="aboutImg1" height="550px" width="880px"/>
+      <div class="aboutImg">
+        <div class="aboutImg1 image">
+          ::before
+        </div>
+        <style>
+          .about:before {
+            background-image: url("../static/sample.jpg")
+          }
+        </style>
+      </div>
       <div class="aboutContents">
-        <h1>about</h1>
-        <p class="mainText">こんにちは。今日は、いい天気ですね。</p>
+        <h2 class="text sd">about</h2>
+        <h3 class="text sd h3-1">”ゆれる”を創る</h3>
+        <h3 class="text sd h3-2">それをココから。</h3>
+        <p class="text sd">
+          "何か、なだらかなアシタに昨日の香りを感じる、今日このごろ。"
+          <br>
+          "今日より、明日がよくなるとお思いですか？"
+          <br>
+          "意外と変わりませんよ。明日も今日も。"
+        </p>
+        <div class="readMore">
+        </div>
       </div>
-      <div class="aboutBackground">
-        画像
+
+      <div class="image sd">
+        ::before
+        <div class="imgMask">
+          <p>ever yesterday never today...</p>
+        </div>
+        <style>.sd:before {
+          background-image: url("../static/sample.jpg")
+        }</style>
       </div>
-      <img src="../static/sample02.jpg" class="aboutImg2" height="400px" width="600px"/>
-      <img src="../static/sample03.jpg" class="aboutImg3" height="400px" width="600px"/>
+      <div class="image sd">
+        ::before
+        <style>.sd:before {
+          background-image: url("../static/sample.jpg")
+        }</style>
+      </div>
+      <div class="aboutBackground"></div>
     </div>
+
     <div class="works">
       <div class="worksContents">
         <h1 class="worksTitle">Works</h1>
@@ -88,11 +120,11 @@
         </div>
       </div>
       <div class="projectContents1">
-        <img src="../static/sample02.jpg" height="280px" width="420px"/>
+        <img src="../static/sample02.jpg" height="235px" width="350px"/>
         <div class=" projectTextbox1">今日はすごく良い天気になりました。</div>
       </div>
       <div class="projectContents2">
-        <img src="../static/sample02.jpg" height="280px" width="420px"/>
+        <img src="../static/sample02.jpg" height="235px" width="350px"/>
         <div class=" projectTextbox2">今日はすごく良い天気になりました。</div>
       </div>
     </div>
@@ -200,50 +232,150 @@ export default {}
   transition: opacity 0.5s;
 }
 
-.aboutBackground {
-  margin-top: 100px;
-  height: 1000px;
-  width: 100%;
-  background-color: #35495e !important;
-  z-index: 1;
-  position: absolute;
-}
-
-.p {
-  font-size: 16px;
-  z-index: 3;
-
-}
-
 .about {
-  height: 1500px;
+  align-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: auto;
+  justify-content: flex-start;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  transform: translate(0px, 0px);
   width: 100%;
-  position: relative;
+  z-index: 0;
+  max-width: 100%;
 }
 
 .aboutContents {
-  position: absolute;
-  z-index: 2;
-  height: 550px;
-  width: 700px;
-  top: 550px;
+  align-content: flex-start;
+  align-items: flex-start;
+  background: rgba(0, 0, 0, 0.0);
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: auto;
+  justify-content: flex-start;
+  margin: 140px 60px 0 60px;
+  width: 650px;
+  max-width: calc(100% - 120px);
+}
+
+.aboutImg {
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  margin: -100px 0 0 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 .aboutImg1 {
-  position: absolute;
-  z-index: 2;
+  margin: 0 0 0 0;
+  width: 90%;
+  max-width: 90%;
+  height: 80vh;
 }
 
-.aboutImg2 {
-  position: absolute;
-  top: 1100px;
-  left: 200px;
+.aboutContents h2 {
+  color: #FFFFFF;
+  flex: none;
+  font-family: Helvetica;
+  font-size: 64px;
+  font-weight: 600;
+  height: auto;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  margin: 0 0 0 0;
+  text-align: left;
+  width: 100%;
+  max-width: 100%;
+  justify-content: flex-start;
 }
 
-.aboutImg3 {
+.h3-1{
+  color: #FFFFFF;
+  flex: none;
+  font-family: '角ゴシック';
+  font-feature-settings: 'palt' 1;
+  font-size: 32px;
+  font-weight: 400;
+  height: auto;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  margin: 120px 0 0 0;
+  text-align: left;
+  width: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+}
+
+.h3-2{
+  color: #FFFFFF;
+  flex: none;
+  font-family: '角ゴシック';
+  font-feature-settings: 'palt' 1;
+  font-size: 32px;
+  font-weight: 400;
+  height: auto;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  margin: 15px 0 0 0;
+  text-align: left;
+  width: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+}
+.aboutContents {
+  color: #FFFFFF;
+  flex: none;
+  font-family: '角ゴシック';
+  font-feature-settings: 'palt' 1;
+  font-size: 16px;
+  font-weight: 400;
+  height: auto;
+  letter-spacing: 0.1em;
+  line-height: 1.9;
+  margin: 50px 0 0 0;
+  text-align: left;
+  width: 100%;
+  max-width: 100%;
+  justify-content: flex-start;
+}
+
+.readMore {
+  align-content: center;
+  align-items: center;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: auto;
+  justify-content: flex-end;
+  margin: 60px 0 0 0;
+  padding: 0 0 0 0;
+  width: 100%;
+  z-index: 0;
+  max-width: 100%;
+}
+
+.aboutBackground {
+  background: #f53c08;
+  bottom: 0;
+  flex: none;
+  height: auto;
+  left: 0;
+  margin: 0 0 0 0;
   position: absolute;
-  top: 1165px;
-  right: 200px;
+  right: 0;
+  top: 0;
+  width: auto;
+  z-index: -1;
+  max-width: 100%;
 }
 
 .worksTitle {
@@ -317,8 +449,6 @@ export default {}
 .project {
   height: 1400px;
   width: 100%;
-  background-color: #35495e;
-  padding: 0 160px 0 160px;
 }
 
 .projectTitle {
@@ -342,11 +472,6 @@ export default {}
 
 .projectText2 {
   float: right;
-}
-
-h2 {
-  font-size: 150px;
-  line-height: 50px;
 }
 
 .projectContents1 {
@@ -374,7 +499,7 @@ h2 {
   height: 320px;
   width: 500px;
   position: relative;
-  margin: 65px;
+  margin-top: 65px;
 }
 
 .projectContents2 img {
@@ -390,4 +515,20 @@ h2 {
   height: 170px;
   width: 440px;
 }
+
+.image:before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: inherit;
+  z-index: -2;
+  pointer-events: none;
+  background-size: cover;
+  background-position: 50%;
+  transition: inherit;
+}
+
 </style>
