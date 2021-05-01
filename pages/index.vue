@@ -26,33 +26,32 @@
       </div>
     </div>
     <div class="about">
-      <div class="aboutImg">
-        <div class="aboutImg1 image">
-          ::before
+      <div class="aboutSpace"></div>
+      <div class="image1">
+        <div class="aboutImg1">
+
         </div>
-        <style>
-          .about:before {
-            background-image: url("../static/sample.jpg")
-          }
-        </style>
       </div>
       <div class="aboutContents">
         <h2 class="text sd">about</h2>
         <h3 class="text sd h3-1">”ゆれる”を創る</h3>
         <h3 class="text sd h3-2">それをココから。</h3>
-        <p class="text sd">
-          "何か、なだらかなアシタに昨日の香りを感じる、今日このごろ。"
+        <p class="textP">
+          何か、なだらかなアシタに昨日の香りを感じる、今日このごろ。
           <br>
-          "今日より、明日がよくなるとお思いですか？"
+          今日より、明日がよくなるとお思いですか？
           <br>
-          "意外と変わりませんよ。明日も今日も。"
+          意外と変わりませんよ。明日も今日も。
         </p>
         <div class="readMore">
+          <a href="index.vue" class="readLink">
+            <div class="aboutLine"></div>
+            <p class="readText">Read More</p>
+          </a>
         </div>
       </div>
 
-      <div class="image sd">
-        ::before
+      <div class="image">
         <div class="imgMask">
           <p>ever yesterday never today...</p>
         </div>
@@ -60,8 +59,7 @@
           background-image: url("../static/sample.jpg")
         }</style>
       </div>
-      <div class="image sd">
-        ::before
+      <div class="image">
         <style>.sd:before {
           background-image: url("../static/sample.jpg")
         }</style>
@@ -247,6 +245,8 @@ export default {}
   width: 100%;
   z-index: 0;
   max-width: 100%;
+  display: flex;
+  position: relative;
 }
 
 .aboutContents {
@@ -261,25 +261,6 @@ export default {}
   margin: 140px 60px 0 60px;
   width: 650px;
   max-width: calc(100% - 120px);
-}
-
-.aboutImg {
-  align-content: flex-start;
-  align-items: flex-start;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  margin: -100px 0 0 0;
-  padding: 0;
-  width: 100%;
-  max-width: 100%;
-}
-
-.aboutImg1 {
-  margin: 0 0 0 0;
-  width: 90%;
-  max-width: 90%;
-  height: 80vh;
 }
 
 .aboutContents h2 {
@@ -298,7 +279,7 @@ export default {}
   justify-content: flex-start;
 }
 
-.h3-1{
+.h3-1 {
   color: #FFFFFF;
   flex: none;
   font-family: '角ゴシック';
@@ -315,7 +296,7 @@ export default {}
   justify-content: flex-start;
 }
 
-.h3-2{
+.h3-2 {
   color: #FFFFFF;
   flex: none;
   font-family: '角ゴシック';
@@ -331,7 +312,8 @@ export default {}
   max-width: 100%;
   justify-content: flex-start;
 }
-.aboutContents {
+
+.textP {
   color: #FFFFFF;
   flex: none;
   font-family: '角ゴシック';
@@ -341,7 +323,7 @@ export default {}
   height: auto;
   letter-spacing: 0.1em;
   line-height: 1.9;
-  margin: 50px 0 0 0;
+  margin: 50px 0px 0px 0px;
   text-align: left;
   width: 100%;
   max-width: 100%;
@@ -361,6 +343,35 @@ export default {}
   width: 100%;
   z-index: 0;
   max-width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.readLink {
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 5px 0px 5px 0px;
+  z-index: 0;
+  display: flex;
+  text-decoration: none;
+}
+
+.readText {
+  color: #FFFFFF;
+  flex: none;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: 600;
+  height: auto;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  text-align: right;
+  width: auto;
+  max-width: 100%;
+  justify-content: flex-end;
 }
 
 .aboutBackground {
@@ -376,6 +387,55 @@ export default {}
   width: auto;
   z-index: -1;
   max-width: 100%;
+}
+
+.aboutSpace {
+  align-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100px;
+  justify-content: center;
+  width: 100%;
+  z-index: 0;
+  max-width: 100%;
+}
+
+.aboutImg1 {
+  flex: none;
+  height: 70vh;
+  width: 90%;
+  max-width: 90%;
+  position: relative;
+  z-index: 1;
+}
+
+.aboutImg1:before {
+  content: ''; /*何も入れない*/
+  display: inline-block; /*忘れずに！*/
+  width: 100%; /*画像の幅*/
+  height: 100%; /*画像の高さ*/
+  background-image: url(../static/sample.jpg);
+  background-size: cover;
+  vertical-align: middle;
+
+}
+
+.image1 {
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  margin: -100px 0 0 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  position: relative;
+  z-index: 0;
 }
 
 .worksTitle {
@@ -516,7 +576,7 @@ export default {}
   width: 440px;
 }
 
-.image:before {
+.image::before {
   content: "";
   top: 0;
   left: 0;
@@ -531,4 +591,22 @@ export default {}
   transition: inherit;
 }
 
+.image {
+  position: relative;
+}
+
+.aboutLine {
+  align-content: flex-start;
+  align-items: flex-start;
+  background: #FFFFFF;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 1px;
+  justify-content: center;
+  margin: 0px 20px 0px 0px;
+  opacity: 0.7;
+  width: 80px;
+  max-width: calc(100% - 20px);
+}
 </style>
