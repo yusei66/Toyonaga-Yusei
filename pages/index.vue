@@ -33,9 +33,9 @@
         </div>
       </div>
       <div class="aboutContents">
-        <h2 class="text sd">about</h2>
-        <h3 class="text sd h3-1">”ゆれる”を創る</h3>
-        <h3 class="text sd h3-2">それをココから。</h3>
+        <h2 class="text ">about</h2>
+        <h3 class="text h3-1">”ゆれる”を創る</h3>
+        <h3 class="text h3-2">それをココから。</h3>
         <p class="textP">
           何か、なだらかなアシタに昨日の香りを感じる、今日このごろ。
           <br>
@@ -49,83 +49,58 @@
             <p class="readText">Read More</p>
           </a>
         </div>
+        <div class="aboutBackground"></div>
       </div>
 
-      <div class="image">
-        <div class="imgMask">
-          <p>ever yesterday never today...</p>
+      <div class="aboutImgs">
+        <div class="image2">
         </div>
-        <style>.sd:before {
-          background-image: url("../static/sample.jpg")
-        }</style>
+        <div class="image3">
+        </div>
       </div>
-      <div class="image">
-        <style>.sd:before {
-          background-image: url("../static/sample.jpg")
-        }</style>
-      </div>
-      <div class="aboutBackground"></div>
+      <div class="aboutSpace1"></div>
     </div>
 
-    <div class="works">
-      <div class="worksContents">
-        <h1 class="worksTitle">Works</h1>
-        <div class="worksCard">
-          <div class="card card-skin">
-            <div class="card__imgframe"></div>
-            <div class="card__textbox">
-              <div class="card__titletext">
-                タイトルがはいります。タイトルがはいります。
-              </div>
-              <div class="card__overviewtext">
-                概要がはいります。概要がはいります。概要がはいります。概要がはいります。
-              </div>
-            </div>
+    <div class="works sd">
+      <div class="worksText sd">
+        <h2 class="h2-2">works</h2>
+      </div>
+      <div class="worksContent1">
+        <div class="worksImg1 sd"></div>
+        <div class="worksText1">
+          <h3 class="h3-3">ショウ、チク、バイ<br>にほんのカタチ</h3>
+          <p class="worksTextP">いつかの明日は、今日の一瞬。<br>
+            忘れないよう、メモに書いた、<br>
+            消えていく日本のカタチ、<br>
+            僕は何も知らない。</p>
+        </div>
+      </div>
+      <div class="worksContent2">
+        <div class="worksSpace"></div>
+        <div class="worksText2">
+          <h3 class="h3-4">
+            クリームソーダーを飲んだ、<br>
+            あのときの記憶。</h3>
+          <p class="worksTextP2">忘れていくのは、当然のこと。だけど、伝えて
+            いくことは僕らの役割。</p>
+        </div>
+        <div class="worksSpace"></div>
+        <div class="worksImg2 sd"></div>
+      </div>
+      <div class="worksContent3">
+        <div class="worksImg3"></div>
+        <div class="worksText3">
+          <div class="h3-5">夢にみたインド<br>
+            サクッと話すには荷が重い
           </div>
-          <div class="card card-skin">
-            <div class="card__imgframe"></div>
-            <div class="card__textbox">
-              <div class="card__titletext">
-                タイトルがはいります。タイトルがはいります。
-              </div>
-              <div class="card__overviewtext">
-                概要がはいります。概要がはいります。概要がはいります。概要がはいります。
-              </div>
-            </div>
-          </div>
-          <div class="card card-skin">
-            <div class="card__imgframe"></div>
-            <div class="card__textbox">
-              <div class="card__titletext">
-                タイトルがはいります。タイトルがはいります。
-              </div>
-              <div class="card__overviewtext">
-                概要がはいります。概要がはいります。概要がはいります。概要がはいります。
-              </div>
-            </div>
+          <div class="worksTextP3">友達が飼ってたブラウンのプードル、家で啜った<br>
+            昨日のヌードル、それでキンドル眺めればサクッと<br>
+            荷が重い話の完成。
           </div>
         </div>
       </div>
     </div>
-    <div class="project">
-      <div class="projectTitle">
-        <div class="projectText1">
-          <h2>pro</h2>
-        </div>
-        <div class="projectTexts">
-          <img src="../static/sample01.jpg" height="235px" width="350px"/>
-          <div class="projectText2"><h2>ject</h2></div>
-        </div>
-      </div>
-      <div class="projectContents1">
-        <img src="../static/sample02.jpg" height="235px" width="350px"/>
-        <div class=" projectTextbox1">今日はすごく良い天気になりました。</div>
-      </div>
-      <div class="projectContents2">
-        <img src="../static/sample02.jpg" height="235px" width="350px"/>
-        <div class=" projectTextbox2">今日はすごく良い天気になりました。</div>
-      </div>
-    </div>
+
   </div>
 </template>
 
@@ -420,7 +395,6 @@ export default {}
   background-image: url(../static/sample.jpg);
   background-size: cover;
   vertical-align: middle;
-
 }
 
 .image1 {
@@ -438,163 +412,6 @@ export default {}
   z-index: 0;
 }
 
-.worksTitle {
-  height: 60px;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.worksContents {
-  height: 450px;
-  width: 700px;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  margin: auto;
-}
-
-.works {
-  height: 800px;
-  width: 100%;
-  position: relative;
-  padding-top: 250px;
-}
-
-.worksCard {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-
-.card {
-  width: 200px;
-  height: 320px;
-}
-
-.card__imgframe {
-  width: 100%;
-  height: 125px;
-  padding-top: 56.25%;
-  background: url(https://placehold.jp/640x360.png) no-repeat center;
-  background-size: cover;
-  box-sizing: border-box;
-}
-
-.card__textbox {
-  width: 100%;
-  height: auto;
-  padding: 20px 18px;
-  background: #ffffff;
-  box-sizing: border-box;
-}
-
-.card__textbox > * + * {
-  margin-top: 10px;
-}
-
-.card__titletext {
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 125%;
-}
-
-.card__overviewtext {
-  font-size: 12px;
-  line-height: 150%;
-}
-
-.project {
-  height: 1400px;
-  width: 100%;
-}
-
-.projectTitle {
-  height: 500px;
-  width: 100%;
-}
-
-.projectText1 {
-  height: 150px;
-  width: auto;
-}
-
-.projectTexts {
-  height: 235px;
-  width: auto;
-}
-
-.projectTexts img {
-  float: left;
-}
-
-.projectText2 {
-  float: right;
-}
-
-.projectContents1 {
-  height: 320px;
-  width: 500px;
-  position: relative;
-  margin: 100px 0 0 auto;
-}
-
-.projectContents1 img {
-  position: absolute;
-  z-index: 1;
-}
-
-.projectTextbox1 {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
-  height: 170px;
-  width: 440px;
-}
-
-.projectContents2 {
-  height: 320px;
-  width: 500px;
-  position: relative;
-  margin-top: 65px;
-}
-
-.projectContents2 img {
-  position: absolute;
-  z-index: 1;
-}
-
-.projectTextbox2 {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
-  height: 170px;
-  width: 440px;
-}
-
-.image::before {
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  border-radius: inherit;
-  z-index: -2;
-  pointer-events: none;
-  background-size: cover;
-  background-position: 50%;
-  transition: inherit;
-}
-
-.image {
-  position: relative;
-}
-
 .aboutLine {
   align-content: flex-start;
   align-items: flex-start;
@@ -608,5 +425,265 @@ export default {}
   opacity: 0.7;
   width: 80px;
   max-width: calc(100% - 20px);
+}
+
+.aboutImgs {
+  align-items: flex-end;
+  background: rgba(0, 0, 0, 0.0);
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: auto;
+  justify-content: space-between;
+  margin: 60px 0px 0px 0px;
+  padding: 0px;
+  transform: translate(0px, 0px);
+  width: 100%;
+  z-index: 1;
+  max-width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.image2 {
+  flex: none;
+  height: 55vh;
+  margin: 0px 0px 100px 0px;
+  width: 45%;
+  max-width: 45%;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.image2:before {
+  content: ''; /*何も入れない*/
+  display: inline-block; /*忘れずに！*/
+  width: 100%; /*画像の幅*/
+  height: 100%; /*画像の高さ*/
+  background-image: url(../static/sample.jpg);
+  background-size: cover;
+  vertical-align: middle;
+}
+
+.image3 {
+  flex: none;
+  height: 55vh;
+  width: 58%;
+  max-width: 58%;
+  margin: 0px 0px 0px -60px;
+  padding: 0px 0px 0px 0px;
+}
+
+.image3:before {
+  content: ''; /*何も入れない*/
+  display: inline-block; /*忘れずに！*/
+  width: 100%; /*画像の幅*/
+  height: 100%; /*画像の高さ*/
+  background-image: url(../static/sample.jpg);
+  background-size: cover;
+  vertical-align: middle;
+}
+
+.aboutSpace1 {
+  flex: none;
+  height: 100px;
+  margin: -100px 0px 0px 0px;
+  width: 100%;
+  max-width: 100%;
+  z-index: 0;
+  background-color: #FFFFFF;
+}
+
+.works {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+
+.worksText {
+  margin: 160px 0 100px 0;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  padding: 0;
+}
+
+.h2-2 {
+  font-family: 角ゴシック;
+  font-size: 64px;
+  word-spacing: 70px;
+  font-weight: bold;
+}
+
+.worksContent1 {
+  height: 100%;
+  width: 90%;
+  min-width: 90%;
+  margin: 100px 0 0 0;
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.worksTextP {
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
+  height: auto;
+  margin: 30px 0;
+}
+
+.worksText1 {
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  width: 38%;
+  min-width: 38%;
+  height: auto;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.worksImg1 {
+  height: 50vh;
+  width: 55%;
+  min-width: 55%;
+}
+
+.worksImg1:before {
+  content: ''; /*何も入れない*/
+  display: inline-block; /*忘れずに！*/
+  width: 100%; /*画像の幅*/
+  height: 100%; /*画像の高さ*/
+  background-image: url(../static/sample.jpg);
+  background-size: cover;
+  vertical-align: middle;
+}
+
+.h3-3 {
+  font-size: 24px;
+  font-family: 角ゴシック;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+
+.worksContent2 {
+  height: auto;
+  width: 80%;
+  min-width: 80%;
+  margin: 120px 0 0 0;
+  flex-direction: row;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.worksText2 {
+  width: 45%;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-grow: 0;
+}
+
+.worksTextP2 {
+  font-family: 角ゴシック;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.h3-4 {
+  font-family: 角ゴシック;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.worksImg2 {
+  width: 40%;
+  height: 80vh;
+  flex-grow: 0;
+}
+
+.worksImg2:before {
+  content: ''; /*何も入れない*/
+  display: inline-block; /*忘れずに！*/
+  width: 100%; /*画像の幅*/
+  height: 100%; /*画像の高さ*/
+  background-image: url(../static/sample2.jpg);
+  background-size: cover;
+  vertical-align: middle;
+}
+
+.worksSpace {
+  width: 7.5%;
+  height: 50px;
+  flex-grow: 0;
+}
+
+.worksContent3 {
+  height: auto;
+  width: 80%;
+  min-width: 80%;
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
+  align-content: flex-end;
+  align-items: flex-end;
+  margin: -160px 0 0 0;
+}
+
+.worksText3{
+  width: 45%;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.h3-5{
+  font-size: 24px;
+  font-family: 角ゴシック;
+  font-weight: bold;
+}
+
+.worksTextP3{
+  font-size: 16px;
+  font-family: 角ゴシック;
+  margin-top: 30px;
+}
+
+.worksImg3 {
+  width: 40%;
+  height: 80vh;
+  flex-grow: 0;
+}
+
+.worksImg3:before {
+  content: ''; /*何も入れない*/
+  display: inline-block; /*忘れずに！*/
+  width: 100%; /*画像の幅*/
+  height: 100%; /*画像の高さ*/
+  background-image: url(../static/sample2.jpg);
+  background-size: cover;
+  vertical-align: middle;
+}
+
+.sd {
+  max-width: 100%;
+  z-index: 0;
+  pointer-events: all;
+  flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  flex: none;
 }
 </style>
