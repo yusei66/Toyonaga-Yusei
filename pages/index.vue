@@ -60,8 +60,7 @@
       </div>
       <div class="aboutSpace1"></div>
     </div>
-
-    <div class="works sd">
+    <div class="works">
       <div class="worksText sd">
         <h2 class="h2-2">works</h2>
       </div>
@@ -99,6 +98,32 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="project sd">
+      <div class="projectNoren sd">
+        <img src="../static/sample.jpg" class="noren">
+      </div>
+      <div class="projectContents sd">
+        <div class="projectText">
+          <h2 class="h2-3">project</h2>
+        </div>
+        <div class="projectContent2">
+          <div class="projectRadius sd">
+            <img src="../static/sample.jpg" class="radius">
+            <h3 class="radiusText">キノウ</h3>
+          </div>
+          <div class="projectRadius sd">
+            <img src="../static/sample.jpg" class="radius">
+            <h3 class="radiusText">イマ</h3>
+          </div>
+          <div class="projectRadius sd">
+            <img src="../static/sample.jpg" class="radius">
+            <h3 class="radiusText">アシタ</h3>
+          </div>
+        </div>
+      </div>
+      <div class="projectBackground"></div>
     </div>
 
   </div>
@@ -638,20 +663,20 @@ export default {}
   margin: -160px 0 0 0;
 }
 
-.worksText3{
+.worksText3 {
   width: 45%;
   align-content: flex-start;
   align-items: flex-start;
   justify-content: flex-start;
 }
 
-.h3-5{
+.h3-5 {
   font-size: 24px;
   font-family: 角ゴシック;
   font-weight: bold;
 }
 
-.worksTextP3{
+.worksTextP3 {
   font-size: 16px;
   font-family: 角ゴシック;
   margin-top: 30px;
@@ -671,6 +696,89 @@ export default {}
   background-image: url(../static/sample2.jpg);
   background-size: cover;
   vertical-align: middle;
+}
+
+.project {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-top: 160px;
+}
+
+.projectNoren {
+  width: 100%;
+  height: 100vh;
+
+}
+
+.noren {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.projectText {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.projectContents {
+  width: 100%;
+  height: auto;
+  margin-top: 160px;
+}
+
+.h2-3 {
+  font-size: 64px;
+  font-family: Helvetica;
+  color: #FFFFFF;
+}
+
+.projectContent2 {
+  margin: 140px 0 0 0;
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  flex: none;
+  flex-direction: row;
+  width: 75%;
+  height: auto;
+}
+
+.radius {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}
+
+.radiusText {
+  font-family: 角ゴシック;
+  font-size: 28px;
+  margin-top: 35px;
+  color: #FFFFFF;
+}
+
+.projectRadius {
+  margin: 0 0 100px 0;
+}
+
+.projectBackground {
+  background: #f53c08;
+  bottom: 0;
+  flex: none;
+  height: auto;
+  left: 0;
+  margin: 0 0 0 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+  z-index: -1;
+  max-width: 100%;
 }
 
 .sd {
