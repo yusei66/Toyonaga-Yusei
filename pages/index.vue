@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container sd">
     <div class="firstView">
       <div class="firstView_contents1">
         とよなが
@@ -124,6 +124,11 @@
         </div>
       </div>
       <div class="projectBackground"></div>
+    </div>
+    <div class="projectText2">
+      <div class="projecttextContents"><img class="projectImg" src="../static/sample.jpg"></div>
+      <div class="projecttextContents"><img class="projectImg" src="../static/sample.jpg"></div>
+      <div class="projecttextContents"><img class="projectImg" src="../static/sample.jpg"></div>
     </div>
 
   </div>
@@ -779,6 +784,30 @@ export default {}
   width: auto;
   z-index: -1;
   max-width: 100%;
+}
+
+.projectText2{
+  margin: -50px 0 0 0;
+  height: 400px;
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+}
+
+.projecttextContents{
+  height: 400px;
+  width: 235px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  box-shadow: 2px 2px 8px 0.5px black ;
+}
+
+.projectImg{
+  height: 180px;
+  width: 235px;
 }
 
 .sd {
