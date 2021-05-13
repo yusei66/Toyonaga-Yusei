@@ -2,13 +2,13 @@
   <div class="container sd">
     <div class="firstView">
       <div class="firstView_contents1">
-        とよなが
+        さくひん
       </div>
       <div class="firstView_contents2">
         ＃ぼんやり、ゆらゆら
       </div>
       <div class="firstView_contents3">
-        #豊永の肩には象がいる
+        #これはSampleです
       </div>
       <div class="firstView_contents4">
         follow me
@@ -16,11 +16,11 @@
       <div class="firstView_contents5">
         <nav tabindex="-1" class="menu">
           <ul tabindex="-1" class="menu-ul">
-            <li><a href="#">リンク</a></li>
-            <li><a href="#">リンク</a></li>
-            <li><a href="#">リンク</a></li>
-            <li><a href="#">リンク</a></li>
-            <li><a href="#">リンク</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">works</a></li>
+            <li><a href="#">project</a></li>
+            <li><a href="#">information</a></li>
+            <li><a href="#">お問い合わせ</a></li>
           </ul>
         </nav>
       </div>
@@ -99,7 +99,6 @@
         </div>
       </div>
     </div>
-
     <div class="project sd">
       <div class="projectNoren sd">
         <img src="../static/sample.jpg" class="noren">
@@ -129,6 +128,36 @@
       <div class="projecttextContents"><img class="projectImg" src="../static/sample.jpg"></div>
       <div class="projecttextContents"><img class="projectImg" src="../static/sample.jpg"></div>
       <div class="projecttextContents"><img class="projectImg" src="../static/sample.jpg"></div>
+    </div>
+    <div class="information sd">
+      <div class="infImage">
+        <div class="informationImg1"></div>
+      </div>
+      <div class="informationContents">
+        <div class="informationTexts">
+          <h2>information</h2>
+          <div class="infText">
+            <img src="../static/sample.jpg" class="infImg2">
+            <div class="inftextContents">
+              <div class="inftextIn">
+                <h3 class="h3-6">豊永雄正</h3>
+                <p class="p6">以下、お問い合わせフォームです。<br>コンタクトはこちらからどうぞ。</p>
+              </div>
+              <div class="infYazirushi"></div>
+              <div class="infButton">
+                <button value="お問い合わせ">お問い合わせ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footerText">
+          <h2 class="h2-7">SNSもやってます</h2>
+          <p class="footerP">follow me</p>
+          <h3 class="h3-7">Sample</h3>
+        </div>
+      </footer>
     </div>
 
   </div>
@@ -184,9 +213,9 @@ export default {}
      アイコンは、はてなブログのデフォルトアイコン使用しています。
  */
   font-family: blogicon;
-  content: "\f003";
+  content: url("../static/sample2.png");
   font-size: 30px;
-  line-height: 1;
+  line-height: 5;
 }
 
 .menu-ul {
@@ -786,7 +815,7 @@ export default {}
   max-width: 100%;
 }
 
-.projectText2{
+.projectText2 {
   margin: -50px 0 0 0;
   height: 400px;
   width: 75%;
@@ -796,18 +825,185 @@ export default {}
   justify-content: space-between;
 }
 
-.projecttextContents{
+.projecttextContents {
   height: 400px;
   width: 235px;
   background-color: #FFFFFF;
   display: flex;
   justify-content: center;
-  box-shadow: 2px 2px 8px 0.5px black ;
+  box-shadow: 2px 2px 8px 0.5px black;
 }
 
-.projectImg{
+.projectImg {
   height: 180px;
   width: 235px;
+}
+
+.informationImg1 {
+  flex: none;
+  height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.informationImg1:before {
+  content: ''; /*何も入れない*/
+  display: inline-block; /*忘れずに！*/
+  width: 100%; /*画像の幅*/
+  height: 100%; /*画像の高さ*/
+  background-image: url(../static/sample.jpg);
+  background-size: cover;
+  vertical-align: middle;
+}
+
+.infImage {
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 0 0 0 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  position: relative;
+  z-index: 0;
+}
+
+.information {
+  align-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: auto;
+  justify-content: flex-start;
+  margin: 200px 0 0 0;
+  padding: 0 0 0 0;
+  transform: translate(0px, 0px);
+  width: 100%;
+  z-index: 0;
+  max-width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.informationContents {
+  width: 100%;
+  max-width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: flex-end;
+  margin: -100px 0 0 0;
+}
+
+.informationTexts {
+  background-color: #FFFFFF;
+  height: 100%;
+  width: 80%;
+  padding: 90px 120px;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+}
+
+.informationTexts h2 {
+  font-size: 40px;
+  font-family: "Helvetica";
+  margin: 0 0 50px 0;
+}
+
+.infText {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.infImg2 {
+  height: 250px;
+  width: 250px;
+}
+
+.inftextContents {
+  margin: 0 0 0 50px;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.inftextIn {
+  height: auto;
+  width: 100%;
+}
+
+.h3-6 {
+  font-family: "角ゴシック";
+  font-size: 20px;
+}
+
+.p6 {
+  margin: 30px 0 0 0;
+  font-family: "角ゴシック";
+  font-size: 16px;
+}
+
+.infButton {
+  margin: 5px 0 0 0;
+}
+
+button {
+
+}
+
+.infYazirushi{
+  border: black 1px solid;
+  width: 1px;
+  height: 100%;
+}
+
+footer{
+  height: 45vh;
+  width: 100%;
+}
+
+.footerText{
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.h2-7{
+  font-size: 20px;
+  font-family: 角ゴシック;
+}
+
+.footerP{
+  margin: 30px 0 0 0;
+  font-family: 角ゴシック;
+  font-size: 16px;
+}
+
+.h3-7{
+  font-size: 35px;
+  font-family: Helvetica;
+  margin: 140px 0 0 0;
 }
 
 .sd {
